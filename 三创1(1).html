@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黎锦苗歌，天涯新梦 - 海南少数民族文化传承与智慧旅游平台</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* 导航栏样式 */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.8);
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* 头部样式 */
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://res.cloudinary.com/dzctdic3a/image/upload/v1741242511/pexels-beatriz-lira-2147676417-30957092_v7zxpf.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* 内容区块样式 */
+        .section {
+            padding: 5rem 2rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #333;
+        }    
+
+        /* 功能卡片网格 */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .feature-card-content {
+            padding: 1.5rem;
+        }
+
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* AI功能展示区 */
+        .ai-features {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+        }
+
+        /* 电商区域样式 */
+        .shop-section {
+            background: #fff;
+        }
+
+        /* 社区互动区域 */
+        .community-section {
+            background: #f1f1f1;
+        }
+
+        /* 页脚样式 */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .header-content p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">首页</a></li>
+			<li><a href="#shop">非遗商城</a></li>
+            <li><a href="#digital-museum">数字博物馆</a></li>            
+            <li><a href="#tourism">特色旅游</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="header">
+        <div class="header-content">
+            <h1>黎锦苗歌，天涯新梦</h1>
+            <p>融合人工智能的海南少数民族文化传承与旅游扶贫平台</p>
+            <p>传承文化瑰宝 · 助力乡村振兴</p>
+        </div>
+    </header>
+
+    <main> 
+	<section id="shop" class="section shop-section">
+            <h2>非遗商城</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <img src="https://res.cloudinary.com/dzctdic3a/image/upload/v1741245212/VCG211368498971_1_ehmi9o.jpg" alt="黎锦制品">
+                    <div class="feature-card-content">
+                        <h3>黎锦精品</h3>
+                        <p>传统手工织造，匠心独运的黎锦艺术品</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://res.cloudinary.com/dzctdic3a/image/upload/v1741245595/Snipaste_2025-03-06_15-19-16_qeaber.png" alt="手工艺品">
+                    <div class="feature-card-content">
+                        <h3>特色工艺品</h3>
+                        <p>竹编、藤编、陶艺等传统手工艺品</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://res.cloudinary.com/dzctdic3a/image/upload/v1741245760/Snipaste_2025-03-06_15-22-21_r6quzi.png" alt="地方特产">
+                    <div class="feature-card-content">
+                        <h3>地方特产</h3>
+                        <p>精选当地农特产品，助力乡村振兴</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="digital-museum" class="section">
+            <h2>数字博物馆</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <a href="virtual-museum.html" class="card-link">
+                        <img src="https://res.cloudinary.com/dzctdic3a/image/upload/v1741248771/Snipaste_2025-03-06_16-08-08_qxyo6n.png" alt="3D虚拟展馆">
+                        <div class="feature-card-content">
+                            <h3>3D虚拟展馆</h3>
+                            <p>运用AI技术打造沉浸式体验，让您足不出户即可360°全方位欣赏非遗珍品</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <img src="https://res.cloudinary.com/dzctdic3a/image/upload/v1741248768/Snipaste_2025-03-06_16-12-29_okaury.png" alt="AI智能导览">
+                    <div class="feature-card-content">
+                        <h3>AI智能导览</h3>
+                        <p>智能语音讲解，多语言实时翻译，为您提供专业的文化解读服务</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="tourism" class="section">
+            <h2>特色旅游</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <img src="https://res.cloudinary.com/dzctdic3a/image/upload/v1741183412/samples/landscapes/beach-boat.jpg" alt="文化体验之旅">
+                    <div class="feature-card-content">
+                        <h3>文化体验之旅</h3>
+                        <p>深入黎族苗族村寨，体验原生态民族文化，参与传统工艺制作</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://res.cloudinary.com/dzctdic3a/image/upload/v1741246237/Snipaste_2025-03-06_15-29-19_sb912n.png" alt="智慧导游">
+                    <div class="feature-card-content">
+                        <h3>智慧导游服务</h3>
+                        <p>AI实时语音讲解，智能路线规划，打造个性化旅游体验</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://res.cloudinary.com/dzctdic3a/image/upload/v1741246681/Snipaste_2025-03-06_15-37-48_dhyfer.png" alt="特色美食">
+                    <div class="feature-card-content">
+                        <h3>特色美食体验</h3>
+                        <p>品尝地道黎族苗族美食，感受独特饮食文化</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+       
+
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>联系我们</h3>
+                <p>地址：海南省陵水市黎安县</p>
+                <p>电话：17301600733</p>
+                <p>邮箱：1848060213@qq.com</p>
+            </div>
+            <div class="social-media">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <!-- 添加社交媒体图标 -->
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2024 黎锦苗歌，天涯新梦. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(0,0,0,0.9)';
+            } else {
+                nav.style.background = 'rgba(0,0,0,0.8)';
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
